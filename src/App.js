@@ -9,6 +9,8 @@ function App() {
   const [secondInput, setSecondInput] = useState("")
   const [thirdInput, setThirdInput] = useState("")
   const [fourthInput, setFourthInput] = useState("")
+
+  const [active, setActive] = useState("FirstCard")
   return (
     <div className="App">
      <Input
@@ -43,10 +45,12 @@ function App() {
           <button>Two</button>
           <button>Three</button>
         </nav>
+        <div>
+          {active === FirstCard &&  <Card title="1" />}
+          {active === SecondCard &&  <Card title="2" />}
+          {active === ThirdCard &&  <Card title="3" />}
+        </div>
        <div>
-        <Card title="1" />
-        <Card title="2" />
-        <Card title="3" />
        </div>
     </div>
   );
