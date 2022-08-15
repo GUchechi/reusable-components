@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import './App.css';
+import Card from './Components/Card/Card';
 import Input from './Components/Input';
 
 function App() {
@@ -37,6 +38,9 @@ function App() {
       <p>Third input:{thirdInput}</p>
       <p>Fourth input:{fourthInput}</p>
      </div>
+       <div>
+        <Card />
+       </div>
     </div>
   );
 }
