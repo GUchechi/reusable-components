@@ -38,10 +38,15 @@ function App() {
       <p>Third input:{thirdInput}</p>
       <p>Fourth input:{fourthInput}</p>
      </div>
+        <nav>
+          <button>One</button>
+          <button>Two</button>
+          <button>Three</button>
+        </nav>
        <div>
-        <Card />
-        <Card />
-        <Card />
+        <Card title="1" />
+        <Card title="2" />
+        <Card title="3" />
        </div>
     </div>
   );
