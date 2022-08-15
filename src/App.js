@@ -40,6 +40,8 @@ function App() {
      </div>
        <div>
         <Card />
+        <Card />
+        <Card />
        </div>
     </div>
   );
