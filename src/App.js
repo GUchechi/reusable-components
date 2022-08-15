@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './App.css';
 import Card from './Components/Card/Card';
 import Input from './Components/Input';
+import Data from './Components/Data'
 
 function App() {
   const [firstInput, setFirstInput] = useState("")
@@ -11,6 +12,7 @@ function App() {
   const [fourthInput, setFourthInput] = useState("")
 
   const [active, setActive] = useState("FirstCard")
+  
   return (
     <div className="App">
      <Input
@@ -41,14 +43,14 @@ function App() {
       <p>Fourth input:{fourthInput}</p>
      </div>
         <nav>
-          <button>One</button>
-          <button>Two</button>
-          <button>Three</button>
+          <button onClick ={()=> setActive("")}>One</button>
+          <button onClick ={()=> setActive("")}>Two</button>
+          <button onClick ={()=> setActive("")}>Three</button>
         </nav>
         <div>
-          {active === FirstCard &&  <Card title="1" />}
-          {active === SecondCard &&  <Card title="2" />}
-          {active === ThirdCard &&  <Card title="3" />}
+          {active === "FirstCard" &&  <Card data={Data} title="1" />}
+          {active === "SecondCard" &&  <Card data={Data} title="2" />}
+          {active === "ThirdCard" &&  <Card data={Data} title="3" />}
         </div>
        <div>
        </div>
